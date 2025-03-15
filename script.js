@@ -1,8 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  gsap.registerPlugin(ScrollTrigger); // Ensure GSAP ScrollTrigger is available
+  // Ensure GSAP and ScrollTrigger are loaded
+  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+    console.error("GSAP or ScrollTrigger not found!");
+    return;
+  }
+  gsap.registerPlugin(ScrollTrigger);
 
   // === Loader and Redirect Animation ===
-  if (window.location.pathname.includes("index.html")) {
+  if (
+    window.location.pathname.endsWith("index.html") ||
+    window.location.pathname === "/"
+  ) {
     const loaderImage = document.getElementById("loader");
     const logoAnimation = document.getElementById("logo-animation");
 
@@ -15,7 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
           opacity: 0,
           duration: 0.8,
           ease: "power3.in",
-          onComplete: () => (window.location.href = "home.html"),
+          onComplete: () => {
+            setTimeout(() => {
+              window.location.href = "home.html"; // Prevents infinite loop
+            }, 500);
+          },
         });
     }
   }
