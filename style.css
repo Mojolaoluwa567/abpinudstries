@@ -13,9 +13,9 @@ html {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  font-family: "Raleway-Bold"; /* Choose a name for the font */
-  src: url("font/Raleway-Bold.ttf") format("woff2"),
-    /* Modern browsers */ url("font/Raleway-Bold.ttf") format("truetype"); /* Backup for older browsers */
+  font-family: "Raleway-Regular"; /* Choose a name for the font */
+  src: url("font/Raleway-Regular.ttf") format("woff2"),
+    /* Modern browsers */ url("font/Raleway-Regular.ttf") format("truetype"); /* Backup for older browsers */
 }
 /* 
 #customCursor {
@@ -51,8 +51,8 @@ textarea {
 
 @font-face {
   font-family: "Raleway-Bold"; /* Choose a name for the font */
-  src: url("font/Raleway-Bold.ttf") format("woff2"),
-    /* Modern browsers */ url("font/Raleway-Bold.ttf") format("truetype"); /* Backup for older browsers */
+  src: url("font/Raleway-regular.ttf") format("woff2"),
+    /* Modern browsers */ url("font/Raleway-Regular.ttf") format("truetype"); /* Backup for older browsers */
 }
 /* Body Styles */
 body {
@@ -143,35 +143,35 @@ nav {
 
 .header {
   position: absolute;
-  top: 10px;
+  top: 0.625rem; /* 10px */
   width: 60%;
   display: flex;
   justify-content: flex-end;
-  gap: 30px;
-  padding: 20px 60px;
-  border: 1.5px solid #7a9f04; /* Correct border declaration */
+  gap: 1.875rem; /* 30px */
+  padding: 1.25rem 3.75rem; /* 20px 60px */
+  border: 0.094rem solid #7a9f04; /* 1.5px */
   border-style: inset;
   z-index: 100; /* Ensure it stays above other elements */
-  margin-left: 380px;
+  margin-left: 23.75rem; /* 380px */
 }
 
 .header li a {
   color: #7a9f04;
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
   text-decoration: none;
 }
 
 .header li a:hover {
   color: rgb(208, 100, 6);
-  border-bottom: 1px solid rgb(208, 100, 6);
+  border-bottom: 0.063rem solid rgb(208, 100, 6); /* 1px */
 }
+
 .logo img {
   width: auto;
-  height: 50px;
-  margin-left: 390px;
-
-  margin-bottom: 30px;
-  margin-top: 15px;
+  height: 3.125rem; /* 50px */
+  margin-left: 24.375rem; /* 390px */
+  margin-bottom: 1.875rem; /* 30px */
+  margin-top: 0.938rem; /* 15px */
   display: flex;
   justify-content: flex-start;
 }
@@ -179,7 +179,7 @@ nav {
 /* Hero Section */
 
 .hero {
-  margin-top: 20px;
+  margin-top: 1.25rem; /* 20px */
   position: relative;
 }
 
@@ -189,7 +189,7 @@ nav {
   margin: 0 auto;
   display: block;
   object-fit: cover;
-  margin-top: -30px;
+  margin-top: -1.875rem; /* -30px */
   filter: brightness(30%);
   background-position: fixed;
   background-repeat: no-repeat;
@@ -199,20 +199,21 @@ nav {
 .parent {
   position: relative;
 }
+
 /* Shared styles for both text blocks */
 .text-block {
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  margin-top: 300px;
-  margin-left: 300px;
+  margin-top: 18.75rem; /* 300px */
+  margin-left: 18.75rem; /* 300px */
 }
 
 .text-block h1 {
-  font-size: 100px;
+  font-size: 6.25rem; /* 100px */
   font-weight: 200;
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 .text-block p {
@@ -225,15 +226,15 @@ nav {
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  margin-top: 300px;
+  margin-top: 18.75rem; /* 300px */
   margin-left: 50%;
 }
 
 .text-block2 h1 {
-  font-size: 100px;
+  font-size: 6.25rem; /* 100px */
   font-weight: 200;
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 .text-block2 p {
@@ -242,51 +243,44 @@ nav {
   max-width: 50%;
 }
 
-/* button a {
-  color: white;
-  text-decoration: none;
-  position: relative;
-  z-index: 10;
-}
-button:hover {
-  background-color: #455a00;
-} */
 .arrow {
   color: white;
 }
 
 .line {
   width: 80%;
-  border: 1px solid white;
+  border: 0.063rem solid white; /* 1px */
   position: absolute;
-  bottom: 70px;
-  left: 175px;
+  bottom: 4.375rem; /* 70px */
+  left: 10.938rem; /* 175px */
 }
+
 .scroll {
   position: absolute;
-  bottom: 10px;
-  left: 175px;
+  bottom: 0.625rem; /* 10px */
+  left: 10.938rem; /* 175px */
 }
 
 .scroll a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
 }
 
-.scroll a :hover {
+.scroll a:hover {
   color: #455a00;
 }
 
 .products {
   position: absolute;
-  bottom: 10px;
-  right: 200px;
+  bottom: 0.625rem; /* 10px */
+  right: 12.5rem; /* 200px */
 }
+
 .products a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
 }
 
 /* General link styling */
@@ -338,29 +332,30 @@ lottie-player {
 }
 
 .about {
-  display: flex;
-  gap: 700px;
-  margin-top: 50px;
+  gap: 43.75rem; /* 700px to rem */
+  margin-top: 3.125rem; /* 50px to rem */
 }
 
 .about h1 {
-  font-size: 50px;
+  font-size: 3.125rem; /* 50px to rem */
   color: #455a00;
-  margin-left: 100px;
+  margin-left: 6.25rem; /* 100px to rem */
 }
 
 .about p {
+  margin-top: -3rem;
   max-width: 30%;
   text-align: justify;
+  margin-left: 73.5rem;
 }
 
 .tag {
-  /* margin-left: 1180px; */
-  margin-top: 70px;
-  margin-bottom: 30px;
+  /* margin-left: 73.75rem; 1180px to rem (commented out) */
+  margin-top: 4.375rem; /* 70px to rem */
+  margin-bottom: 1.875rem; /* 30px to rem */
   display: flex;
   justify-content: flex-end;
-  margin-right: 135px;
+  margin-right: 10rem; /* 135px to rem */
 }
 
 .tag a {
@@ -369,7 +364,7 @@ lottie-player {
 }
 
 .iconn {
-  margin-left: 500px;
+  margin-left: 30rem; /* 500px to rem */
 }
 
 .button:hover {
@@ -377,18 +372,18 @@ lottie-player {
 }
 
 .why {
-  margin-top: 200px;
+  margin-top: 12.5rem; /* 200px to rem */
 }
 
 .why h1 {
-  font-size: 50px;
+  font-size: 3.125rem; /* 50px to rem */
   color: #455a00;
-  margin-left: 100px;
-  margin-top: 80px;
+  margin-left: 6.25rem; /* 100px to rem */
+  margin-top: 5rem; /* 80px to rem */
 }
 
 .btn.btn-primary {
-  margin-top: -120px;
+  margin-top: -7.5rem; /* -120px to rem */
   background-color: transparent;
   color: #000000;
   border: none; /* Ensures no border */
@@ -396,19 +391,7 @@ lottie-player {
   box-shadow: none; /* Removes default button shadow */
   display: flex;
   justify-content: flex-end;
-  margin-right: 135px;
-}
-
-.btn.btn-primary:hover {
-  color: #7a9f04;
-  background-color: transparent;
-}
-
-.btn.btn-primary:focus,
-.btn.btn-primary:active {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  outline: none !important;
+  margin-right: 8.4375rem; /* 135px to rem */
 }
 
 .choose {
@@ -1217,4 +1200,84 @@ footer {
 
 .social-icons a:hover {
   color: #ccc; /* Optional: Change color on hover */
+}
+
+@media (max-width: 1366px) {
+  header {
+    zoom: 0.9;
+  }
+  .hero img {
+    background-position: fixed;
+  }
+  .text-block {
+    zoom: 0.77;
+    margin-left: 10rem;
+  }
+  .text-block2 {
+    zoom: 0.77;
+  }
+
+  .text-block p,
+  .text-block2 p {
+    font-weight: 500;
+  }
+
+  .text-block2 p {
+    max-width: 68%;
+  }
+  .header {
+    margin-left: 18rem;
+  }
+  .logo img {
+    margin-left: 20rem;
+  }
+
+  .about {
+    zoom: 0.7;
+    margin-bottom: 20rem;
+  }
+
+  .about p {
+    line-height: 1.3;
+  }
+  .tag {
+    zoom: 0.95;
+    margin-right: 8rem;
+  }
+
+  .why {
+    zoom: 0.8;
+    margin-right: -5rem;
+    margin-top: -2.5rem;
+  }
+  .why h3 {
+    font-size: 1rem;
+  }
+  .product {
+    zoom: 0.8;
+  }
+  .animation {
+    margin-left: 10rem;
+  }
+
+  .allin {
+    zoom: 0.8;
+  }
+
+  .vegetables img {
+    margin-top: 5rem;
+  }
+
+  .productp,
+  .products-header,
+  .contact,
+  .info {
+    zoom: 0.8;
+  }
+  #space2 {
+    margin-top: 10rem;
+  }
+  #space {
+    margin-top: 10rem;
+  }
 }
