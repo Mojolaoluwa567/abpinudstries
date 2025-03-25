@@ -1268,16 +1268,21 @@ footer {
     margin-top: 5rem;
   }
 
-  .productp,
   .products-header,
   .contact,
   .info {
     zoom: 0.8;
   }
-  #space2 {
-    margin-top: 10rem;
+
+  .box-back {
+    zoom: 0.9;
+    transform-origin: center;
+    gap: 5rem;
   }
-  #space {
-    margin-top: 10rem;
+
+  .name {
+    margin-left: 3.5rem; /* 200px */
+    margin-top: 2.5rem; /* 25px */
+    zoom: 0.9;
   }
 }
