@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .from(
           content,
           { x: 100, opacity: 0, duration: 1, ease: "power3.out" },
-          "<"
+          "<",
         );
     }
   };
@@ -145,9 +145,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.5 },
   );
 
   const statsSection = document.querySelector(".abp-stats");
   if (statsSection) observer.observe(statsSection);
+});
+
+gsap.from(".header li", {
+  y: -20,
+  opacity: 0,
+  stagger: 0.1,
+  duration: 0.8,
+  ease: "power3.out",
+  delay: 0.5,
 });
