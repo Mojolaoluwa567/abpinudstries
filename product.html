@@ -1,17 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product - ABP Industries</title>
-
+    <title>Products — ABP Industries</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/ABP.jpeg" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -23,639 +20,890 @@
     />
   </head>
   <body>
-    <!-- <div id="customCursor">
-      <img src="images/cursor.png" alt="Cursor" />
-    </div> -->
-
-    <!-- Main Content -->
-    <header>
-      <nav>
+    <!-- HEADER -->
+    <header id="mainHeader">
+      <nav class="main-nav">
         <div class="logo">
-          <img src="images/ABP.png" alt="ABP Industries Logo" />
+          <a href="home.html"
+            ><img src="ABP-removebg.png" alt="ABP Industries"
+          /></a>
         </div>
-        <ul class="header">
-          <li><a rel="prefetch" href="home.html">Home</a></li>
-          <li><a rel="prefetch" href="about.html">About</a></li>
-          <li><a rel="prefetch" href="product.html">Product</a></li>
-          <li><a rel="prefetch" href="contact.html">Contact</a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </nav>
     </header>
 
-    <section class="products-header">
-      <h1>Our Premium Product Selection</h1>
-      <p>
-        Discover the finest quality garri available in various sizes to meet
-        your needs.
-      </p>
+    <!-- MOBILE MENU — outside header so position:fixed works correctly -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="nav-close" id="navClose" aria-label="Close menu">
+        &times;
+      </button>
+      <ul class="mobile-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- HERO -->
+    <section class="page-hero">
+      <img
+        src="images/happy-cheerful-african-american-farm-worker-holding-crate-full-local-eco-friendly-ripe-leafy-greens-from-sustainable-crop-harvest-entrepreneurial-bio-permaculture-greenhouse-farm.jpg"
+        loading="eager"
+      />
+      <div class="page-hero-content">
+        <div class="page-hero-eyebrow">Premium Selection</div>
+        <h1 data-aos="fade-up">
+          Our Premium<br /><em
+            style="color: var(--green-act); font-style: italic"
+            >Garri Range</em
+          >
+        </h1>
+      </div>
     </section>
 
-    <div id="pageWrapper">
-      <main class="productp">
-        <section class="parent">
-          <div class="box-back">
-            <article class="two">
-              <div class="background" data-aos="fade-up">
-                <div class="floating-image" id="img50kg" data-aos="fade-up">
-                  <img src="images/Group 50kg.png" alt="50kg Packaging" />
-                </div>
-              </div>
-              <div class="name" data-aos="fade-up">
-                <h1>
-                  Premium Garri > <span>50KG (Wholesale & Retail Supply)</span>
-                </h1>
-                <p>
-                  The ultimate choice for wholesalers and distributors. This
-                  large sack ensures steady availability, making it ideal for
-                  businesses that need a reliable, bulk supply of premium garri.
-                  <br />
-                  <br />
-                  Characteristics <br />
-                  Bulk Quantity: Ensures steady availability for high-demand
-                  buyers. <br />Cost-Effective: Ideal for businesses looking for
-                  better price margins. <br />
-                  Durable Sack Packaging: Strong and moisture-resistant for
-                  long-term storage. <br />Extended Shelf Life: Properly stored
-                  to maintain freshness for an extended period. <br />
-                  Consistent Granules: Finely processed for smooth eba
-                  preparation.
-                </p>
-                <button class="now , hvr-wobble-horizontal">
-                  <a
-                    href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%20__________
-
-                  "
-                  >
-                    Order Now</a
-                  >
-                </button>
-              </div>
-            </article>
-
-            <article class="two">
-              <div class="background" data-aos="fade-up">
-                <div class="floating-image" id="img25kg">
-                  <img src="images/Group 25kg.png" alt="25kg Packaging" />
-                </div>
-              </div>
-              <div class="name" data-aos="fade-up">
-                <h1>
-                  Premium Garri > <span>25KG (Wholesale & Retail Supply)</span>
-                </h1>
-                <p>
-                  Perfect for retailers and bulk buyers who want high-quality
-                  garri in significant quantities but with more flexibility than
-                  the 50 kg sack. <br />
-                  <br />
-
-                  Characteristics <br />Bulk Quantity: Ensures steady
-                  availability for medium-scale buyers. <br />Cost-Effective:
-                  Ideal for retailers and small businesses looking for better
-                  price margins. <br />
-                  Durable Sack Packaging: Strong, moisture-resistant material
-                  for long-term storage. <br />
-                  Extended Shelf Life: Properly preserved to maintain freshness
-                  for months. <br />
-                  Consistent Granules: Smooth texture, finely processed for
-                  quality eba preparation.
-                </p>
-                <button class="now , hvr-wobble-horizontal">
-                  <a
-                    href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%20__________
-
-                  "
-                  >
-                    Order Now</a
-                  >
-                </button>
-              </div>
-            </article>
-
-            <article class="two">
-              <div class="background" data-aos="fade-up">
-                <div class="floating-image" id="img10kg">
-                  <img src="images/Group 10kg.png" alt="10kg Packaging" />
-                </div>
-              </div>
-              <div class="name" data-aos="fade-up">
-                <h1>Premium Garri > <span>10KG</span></h1>
-                <p>
-                  Ideal for large families who want a long-lasting supply of
-                  premium garri without frequent restocking. It offers the
-                  perfect blend of convenience and value. <br />
-                  <br />
-
-                  Characteristics <br />
-                  Ideal for Families: Provides enough supply for long-term home
-                  use. <br />
-                  Resealable & Sturdy Sack: Keeps garri fresh, dry, and easy to
-                  store. <br />
-                  Balanced Texture: Medium-sized granules, perfect for both
-                  soaking and eba. <br />
-                  Nutrient-Rich: Packed with essential vitamins and
-                  carbohydrates. <br />
-                  Affordable & Convenient: Great value for households buying in
-                  bulk.
-                </p>
-                <button class="now , hvr-wobble-horizontal">
-                  <a
-                    href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%20__________
-
-                  "
-                  >
-                    Order Now</a
-                  >
-                </button>
-              </div>
-            </article>
-
-            <article class="two">
-              <div class="background" id="pos" data-aos="fade-up">
-                <div class="floating-image" id="img5kg">
-                  <img src="images/Group 5kg.png" alt="5kg Packaging" />
-                </div>
-              </div>
-              <div class="name" data-aos="fade-up">
-                <h1>Premium Garri (Moderate Family Pack) > <span>5KG</span></h1>
-                <p>
-                  A great option for small to medium-sized families looking for
-                  a steady supply of high-quality garri for everyday meals.
-                  <br />
-                  <br />
-
-                  Characteristics <br />
-                  Perfect for Smaller Families: Lasts for weeks without wastage.
-                  <br />
-                  Moisture-Resistant Packaging: Ensures long-lasting freshness
-                  and quality. <br />Versatile Usage: Suitable for both eba and
-                  drinking garri. Easy to Store: Compact and lightweight for
-                  convenient kitchen storage. <br />
-                  Consistent Quality: Finely processed for a smooth texture.
-                </p>
-                <button class="now , hvr-wobble-horizontal">
-                  <a
-                    href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%20__________
-
-                  "
-                  >
-                    Order Now</a
-                  >
-                </button>
-              </div>
-            </article>
-
-            <article class="two">
-              <div class="background" id="pos" data-aos="fade-up">
-                <div class="floating-image" id="img1kg">
-                  <img src="images/1kg box.png" alt="1kg Packaging" />
-                </div>
-              </div>
-              <div class="name" data-aos="fade-up">
-                <h1>
-                  Premium Garri > <span>1KG (Supermarket & Retail Pack)</span>
-                </h1>
-                <p>
-                  Perfect for supermarkets and retail stores, offering customers
-                  a convenient option for household consumption without bulk
-                  storage. <br />
-                  <br />
-
-                  Characteristics <br />
-                  Perfect for Individuals & Small Households: Ideal for quick
-                  meals. <br />
-                  Sealed for Freshness: Airtight packaging preserves quality and
-                  crunch. <br />
-                  Portable & Lightweight: Easy to carry and store. <br />
-                  Great for Daily Use: Just the right quantity for regular
-                  consumption. <br />
-                  Retail-Friendly: Designed for easy display in supermarkets and
-                  stores.
-                </p>
-                <button class="now , hvr-wobble-horizontal">
-                  <a
-                    href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%20__________
-
-                  "
-                  >
-                    Order Now</a
-                  >
-                </button>
-              </div>
-            </article>
-
-            <article class="two" id="space2">
-              <div class="background" id="pos2" data-aos="fade-up">
-                <div class="floating-image" id="img500g">
-                  <img src="images/Group 500g.png" alt="500g Packaging" />
-                </div>
-              </div>
-              <div class="name" data-aos="fade-up">
-                <h1 data-aos="fade-up">
-                  Premium Garri > <span>500G (Convenient Snack Pack)</span>
-                </h1>
-                <p>
-                  A handy, on-the-go option for students, workers, and
-                  individuals looking for a quick, nutritious meal or snack.
-                  <br />
-                  <br />
-
-                  Characteristics <br />
-                  Great for Snacking & Quick Meals: Perfect for students and
-                  light consumers. <br />
-                  Easy to Carry: Fits into bags for on-the-go consumption.
-                  <br />
-                  Airtight Packaging:Locks in freshness and maintains crispness.
-                  <br />
-                  Ready for Instant Use:Just open and enjoy with milk, sugar, or
-                  groundnuts. <br />
-                  Supermarket-Friendly: Neatly packaged for retail display.
-                </p>
-                <button class="now , hvr-wobble-horizontal">
-                  <a
-                    href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%20__________
-
-                  "
-                  >
-                    Order Now</a
-                  >
-                </button>
-              </div>
-            </article>
-          </div>
-        </section>
-      </main>
+    <!-- PRODUCT INTRO -->
+    <div class="products-intro">
+      <div class="products-intro-inner">
+        <div>
+          <div class="section-label">From farm to table</div>
+          <h2>
+            Discover the finest quality garri,<br />available in every size you
+            need.
+          </h2>
+          <p>100% Nigerian grown. NAFDAC certified. Delivered fresh.</p>
+        </div>
+        <a
+          href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order"
+          class="btn-primary"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </a>
+      </div>
     </div>
 
-    <div class="positioned">
-      <footer>
-        <div class="footer-container">
-          <div class="footer-left">
-            <div class="logos">
-              <img src="images/ABP.jpeg" alt="Maxwell Logo" />
-            </div>
-            <p>info@abpindustries.com</p>
-            <p>07039460584, 08123173007</p>
+    <!-- PRODUCTS LIST -->
+    <section class="product-list">
+      <div class="product-list-inner">
+        <!-- 50KG -->
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-card-image">
+            <img
+              src="images/Group 50kg.png"
+              alt="ABP Premium Garri 50KG"
+              loading="lazy"
+            />
           </div>
-          <div class="footer-links">
-            <div>
-              <h3>Company</h3>
-              <a href="about.html">About</a>
-              <a href="product.html">Product</a>
-              <a href="contact.html">Contact</a>
-            </div>
-
-            <div>
-              <h3>Resources</h3>
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#farmingGuidesModal"
-                >Farming Guides</a
-              >
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#agriculturalResearchModal"
-                >Agricultural Research</a
-              >
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#marketTrendsModal"
-                >Market Trends</a
-              >
-            </div>
-
-            <div>
-              <h3>Legal</h3>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal"
-                >Terms of Service</a
-              >
-              <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"
-                >Privacy Policy</a
-              >
-              <a href="#" data-bs-toggle="modal" data-bs-target="#cookiesModal"
-                >Cookies Policy</a
-              >
-            </div>
-          </div>
-
-          <!-- Farming Guides Modal -->
-          <div
-            class="modal fade"
-            id="farmingGuidesModal"
-            tabindex="-1"
-            aria-labelledby="farmingGuidesLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-fullscreen-xl-down">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="farmingGuidesLabel">
-                    ABP Industries' Guide to Profitable Farming in Lagos
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    At <strong>ABP Industries</strong>, we are committed to
-                    revolutionizing agriculture in Lagos by providing farmers
-                    with best practices to maximize yield and profitability.
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>Urban Farming Techniques:</strong> Maximizing
-                      space with hydroponics, rooftop, and vertical farming.
-                    </li>
-                    <li>
-                      <strong>Soil & Climate Considerations:</strong> Crop
-                      recommendations and premium fertilizers.
-                    </li>
-                    <li>
-                      <strong>Livestock Farming Support:</strong> Poultry, fish,
-                      and snail farming consulting.
-                    </li>
-                    <li>
-                      <strong>Market Access & Distribution:</strong> Direct
-                      connections to consumers.
-                    </li>
-                  </ul>
-                  <p>
-                    We provide
-                    <strong
-                      >free farming guides and consultation services</strong
-                    >
-                    for farmers looking to scale.
-                  </p>
-                </div>
+          <div class="product-card-body">
+            <span class="product-tag">Wholesale &amp; Bulk Supply</span>
+            <h2>Premium Garri <span>50KG</span></h2>
+            <p class="product-subtitle">Wholesale &amp; Retail Supply</p>
+            <p>
+              The ultimate choice for wholesalers and distributors. This large
+              sack ensures steady availability, making it ideal for businesses
+              that need a reliable, bulk supply of premium garri.
+            </p>
+            <div class="product-features">
+              <div class="product-feature">
+                Ensures steady availability for high-demand buyers
+              </div>
+              <div class="product-feature">
+                Cost-effective for better price margins
+              </div>
+              <div class="product-feature">
+                Durable, moisture-resistant sack packaging
+              </div>
+              <div class="product-feature">
+                Extended shelf life for long-term storage
+              </div>
+              <div class="product-feature">
+                Consistent granules for smooth eba preparation
+              </div>
+              <div class="product-feature">
+                Strong &amp; sealed for quality assurance
               </div>
             </div>
+            <a
+              href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%2050KG%20Premium%20Garri"
+              class="product-order-btn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Order Now
+            </a>
           </div>
+        </article>
 
-          <!-- Agricultural Research Modal -->
-          <div
-            class="modal fade"
-            id="agriculturalResearchModal"
-            tabindex="-1"
-            aria-labelledby="agriculturalResearchLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-fullscreen-sm-down">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="agriculturalResearchLabel">
-                    Innovations in Lagos Agriculture: An ABP Industries Report
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    <strong>ABP Industries</strong> leads agricultural
-                    innovation, ensuring Lagos farmers access cutting-edge
-                    technology.
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>High-Yield Seed Varieties:</strong>
-                      Research-backed, drought-resistant crop varieties.
-                    </li>
-                    <li>
-                      <strong>Smart Farming Solutions:</strong> IoT-based
-                      irrigation, soil sensors, and AI-powered crop monitoring.
-                    </li>
-                    <li>
-                      <strong>Sustainable Agriculture:</strong> Organic
-                      fertilizers, composting, and zero-waste methods.
-                    </li>
-                    <li>
-                      <strong>Training & Development:</strong> Workshops and
-                      on-site training.
-                    </li>
-                  </ul>
-                  <p>
-                    We innovate, research, and develop solutions that push
-                    Lagos' agriculture forward.
-                  </p>
-                </div>
+        <!-- 25KG -->
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-card-image">
+            <img
+              src="images/Group 25kg.png"
+              alt="ABP Premium Garri 25KG"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Wholesale &amp; Retail</span>
+            <h2>Premium Garri <span>25KG</span></h2>
+            <p class="product-subtitle">Wholesale &amp; Retail Supply</p>
+            <p>
+              Perfect for retailers and bulk buyers who want high-quality garri
+              in significant quantities but with more flexibility than the 50kg
+              sack.
+            </p>
+            <div class="product-features">
+              <div class="product-feature">
+                Steady availability for medium-scale buyers
+              </div>
+              <div class="product-feature">
+                Ideal for retailers &amp; small businesses
+              </div>
+              <div class="product-feature">
+                Strong, moisture-resistant sack packaging
+              </div>
+              <div class="product-feature">
+                Properly preserved for months of freshness
+              </div>
+              <div class="product-feature">
+                Smooth texture, finely processed
+              </div>
+              <div class="product-feature">
+                Quality eba preparation guaranteed
               </div>
             </div>
+            <a
+              href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%2025KG%20Premium%20Garri"
+              class="product-order-btn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Order Now
+            </a>
           </div>
+        </article>
 
-          <!-- Market Trends Modal -->
-          <div
-            class="modal fade"
-            id="marketTrendsModal"
-            tabindex="-1"
-            aria-labelledby="marketTrendsLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-fullscreen-sm-down">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="marketTrendsLabel">
-                    ABP Industries Market Report: The Future of Farming in Lagos
-                    (2025)
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    ABP Industries is at the center of key agricultural market
-                    trends in Lagos:
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>Rise of Agribusiness Startups:</strong> Increased
-                      small-scale agribusinesses.
-                    </li>
-                    <li>
-                      <strong>Growing Demand for Organic Produce:</strong>
-                      Health-conscious consumers drive demand.
-                    </li>
-                    <li>
-                      <strong>Digital Transformation:</strong>
-                      <strong>ABP AgroConnect</strong> links farmers with buyers
-                      online.
-                    </li>
-                    <li>
-                      <strong>Government Initiatives & Funding:</strong>
-                      Assistance in securing grants and loans.
-                    </li>
-                  </ul>
-                  <p>
-                    Through market insights and expert strategies, ABP
-                    Industries is shaping the future of agriculture in Lagos.
-                  </p>
-                </div>
+        <!-- 10KG -->
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-card-image">
+            <img
+              src="images/Group 10kg.png"
+              alt="ABP Premium Garri 10KG"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Family Pack</span>
+            <h2>Premium Garri <span>10KG</span></h2>
+            <p class="product-subtitle">Large Family Pack</p>
+            <p>
+              Ideal for large families who want a long-lasting supply of premium
+              garri without frequent restocking. Offers the perfect blend of
+              convenience and value.
+            </p>
+            <div class="product-features">
+              <div class="product-feature">
+                Ideal for families — long-term home use
+              </div>
+              <div class="product-feature">
+                Resealable &amp; sturdy sack keeps garri fresh
+              </div>
+              <div class="product-feature">
+                Medium granules, perfect for soaking &amp; eba
+              </div>
+              <div class="product-feature">
+                Packed with essential vitamins &amp; carbohydrates
+              </div>
+              <div class="product-feature">
+                Affordable &amp; great value for bulk households
+              </div>
+              <div class="product-feature">
+                Dry and clean — moisture-free packaging
               </div>
             </div>
+            <a
+              href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%2010KG%20Premium%20Garri"
+              class="product-order-btn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Order Now
+            </a>
           </div>
+        </article>
 
-          <!-- Legal Modals -->
-          <!-- Terms of Service Modal -->
-          <div
-            class="modal fade"
-            id="termsModal"
-            tabindex="-1"
-            aria-labelledby="termsLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-fullscreen-sm-down">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="termsLabel">
-                    ABP Industries - Terms of Service
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    By accessing and using our services, you agree to the
-                    following terms:
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>Service Usage:</strong> Our platform provides
-                      agricultural consulting, training, and product
-                      distribution services.
-                    </li>
-                    <li>
-                      <strong>Intellectual Property:</strong> All research
-                      reports, guides, and market data provided by ABP
-                      Industries are copyrighted.
-                    </li>
-                    <li>
-                      <strong>Liability Limitation:</strong> ABP Industries
-                      ensures quality service but is not liable for unforeseen
-                      losses.
-                    </li>
-                    <li>
-                      <strong>Amendments:</strong> We may update our terms
-                      periodically.
-                    </li>
-                  </ul>
-                  <p>
-                    For inquiries, contact
-                    <strong>legal@abpindustries.com</strong>.
-                  </p>
-                </div>
+        <!-- 5KG -->
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-card-image">
+            <img
+              src="images/Group 5kg.png"
+              alt="ABP Premium Garri 5KG"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Moderate Family Pack</span>
+            <h2>Premium Garri <span>5KG</span></h2>
+            <p class="product-subtitle">Moderate Family Pack</p>
+            <p>
+              A great option for small to medium-sized families looking for a
+              steady supply of high-quality garri for everyday meals.
+            </p>
+            <div class="product-features">
+              <div class="product-feature">Lasts weeks without wastage</div>
+              <div class="product-feature">Moisture-resistant packaging</div>
+              <div class="product-feature">
+                Suitable for both eba and drinking garri
+              </div>
+              <div class="product-feature">
+                Compact &amp; lightweight for easy storage
+              </div>
+              <div class="product-feature">
+                Finely processed, consistent quality
+              </div>
+              <div class="product-feature">
+                Perfect for everyday household use
               </div>
             </div>
+            <a
+              href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%205KG%20Premium%20Garri"
+              class="product-order-btn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Order Now
+            </a>
           </div>
+        </article>
 
-          <!-- Privacy Policy Modal -->
-          <div
-            class="modal fade"
-            id="privacyModal"
-            tabindex="-1"
-            aria-labelledby="privacyLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-fullscreen-sm-down">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="privacyLabel">
-                    ABP Industries - Privacy Policy
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    At <b>ABP Industries</b>, we value your privacy. This policy
-                    explains how we collect, use, and protect your information.
-                  </p>
-                </div>
+        <!-- 1KG -->
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-card-image">
+            <img
+              src="images/1kg box.png"
+              alt="ABP Premium Garri 1KG"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Supermarket &amp; Retail Pack</span>
+            <h2>Premium Garri <span>1KG</span></h2>
+            <p class="product-subtitle">Supermarket &amp; Retail Pack</p>
+            <p>
+              Perfect for supermarkets and retail stores, offering customers a
+              convenient option for household consumption without bulk storage
+              needs.
+            </p>
+            <div class="product-features">
+              <div class="product-feature">
+                Ideal for individuals &amp; small households
+              </div>
+              <div class="product-feature">
+                Airtight sealed packaging — preserves quality
+              </div>
+              <div class="product-feature">
+                Portable &amp; lightweight, easy to carry
+              </div>
+              <div class="product-feature">
+                Just the right quantity for regular use
+              </div>
+              <div class="product-feature">
+                Retail-friendly supermarket display design
+              </div>
+              <div class="product-feature">
+                Premium garri in a convenient size
               </div>
             </div>
+            <a
+              href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%201KG%20Premium%20Garri"
+              class="product-order-btn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Order Now
+            </a>
           </div>
+        </article>
 
-          <!-- Cookies Policy Modal -->
-          <div
-            class="modal fade"
-            id="cookiesModal"
-            tabindex="-1"
-            aria-labelledby="cookiesLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-fullscreen-sm-down">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="cookiesLabel">
-                    ABP Industries - Cookies Policy
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    ABP Industries uses cookies to provide a smooth and
-                    personalized experience.
-                  </p>
-                </div>
+        <!-- 500G -->
+        <article class="product-card" data-aos="fade-up">
+          <div class="product-card-image">
+            <img
+              src="images/Group 500g.png"
+              alt="ABP Premium Garri 500G"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-card-body">
+            <span class="product-tag">Convenient Snack Pack</span>
+            <h2>Premium Garri <span>500G</span></h2>
+            <p class="product-subtitle">Convenient Snack Pack</p>
+            <p>
+              A handy, on-the-go option for students, workers, and individuals
+              looking for a quick, nutritious meal or snack.
+            </p>
+            <div class="product-features">
+              <div class="product-feature">
+                Great for snacking &amp; quick meals
               </div>
+              <div class="product-feature">
+                Fits into bags for on-the-go consumption
+              </div>
+              <div class="product-feature">
+                Airtight packaging locks in freshness
+              </div>
+              <div class="product-feature">
+                Ready to enjoy with milk, sugar or groundnuts
+              </div>
+              <div class="product-feature">
+                Neatly packaged for retail display
+              </div>
+              <div class="product-feature">
+                Perfect portion for students &amp; light consumers
+              </div>
+            </div>
+            <a
+              href="https://wa.me/2348143895891?text=Hello%20good%20day%2C%20I%20would%20like%20to%20order%20500G%20Premium%20Garri"
+              class="product-order-btn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Order Now
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUALITY ASSURANCE BAND -->
+    <section style="background: var(--green-act); padding: 3.5rem 2rem">
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          align-items: center;
+        "
+      >
+        <div>
+          <div class="section-label" style="color: rgba(255, 255, 255, 0.65)">
+            Why Choose ABP
+          </div>
+          <h2
+            style="
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-size: clamp(1.8rem, 3vw, 2.6rem);
+              font-weight: 700;
+              color: #fff;
+              margin: 0.5rem 0 1rem;
+            "
+          >
+            Quality you can<br />taste in every batch
+          </h2>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: rgba(255, 255, 255, 0.8);
+              line-height: 1.8;
+              max-width: 420px;
+            "
+          >
+            Every bag of ABP garri is produced from 100% Nigerian cassava,
+            processed hygienically, and certified to the highest standards. From
+            farm to your table, we never compromise.
+          </p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem">
+          <div
+            style="
+              background: rgba(255, 255, 255, 0.15);
+              border-radius: 10px;
+              padding: 1.25rem;
+              text-align: center;
+            "
+          >
+            <i
+              class="fas fa-award"
+              style="
+                font-size: 1.5rem;
+                color: #fff;
+                margin-bottom: 0.5rem;
+                display: block;
+              "
+            ></i>
+            <div
+              style="
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.85);
+                font-weight: 600;
+              "
+            >
+              NAFDAC Certified
+            </div>
+          </div>
+          <div
+            style="
+              background: rgba(255, 255, 255, 0.15);
+              border-radius: 10px;
+              padding: 1.25rem;
+              text-align: center;
+            "
+          >
+            <i
+              class="fas fa-leaf"
+              style="
+                font-size: 1.5rem;
+                color: #fff;
+                margin-bottom: 0.5rem;
+                display: block;
+              "
+            ></i>
+            <div
+              style="
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.85);
+                font-weight: 600;
+              "
+            >
+              100% Natural
+            </div>
+          </div>
+          <div
+            style="
+              background: rgba(255, 255, 255, 0.15);
+              border-radius: 10px;
+              padding: 1.25rem;
+              text-align: center;
+            "
+          >
+            <i
+              class="fas fa-shield-alt"
+              style="
+                font-size: 1.5rem;
+                color: #fff;
+                margin-bottom: 0.5rem;
+                display: block;
+              "
+            ></i>
+            <div
+              style="
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.85);
+                font-weight: 600;
+              "
+            >
+              Quality Tested
+            </div>
+          </div>
+          <div
+            style="
+              background: rgba(255, 255, 255, 0.15);
+              border-radius: 10px;
+              padding: 1.25rem;
+              text-align: center;
+            "
+          >
+            <i
+              class="fas fa-truck"
+              style="
+                font-size: 1.5rem;
+                color: #fff;
+                margin-bottom: 0.5rem;
+                display: block;
+              "
+            ></i>
+            <div
+              style="
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.85);
+                font-weight: 600;
+              "
+            >
+              Fast Delivery
             </div>
           </div>
         </div>
-        <hr class="underline" />
-        <div class="footer-bottom">
-          <p>&copy; 2025 ABP INDUSTRIES</p>
-          <div class="social-icons" style="color: white">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer-banner">
+      <div class="banner-item">
+        <i class="fas fa-leaf"></i> Sustainable Agriculture
+      </div>
+      <div class="banner-sep"></div>
+      <div class="banner-item">
+        <i class="fas fa-handshake"></i> Trusted by Lagos Farmers Since 2015
+      </div>
+      <div class="banner-sep"></div>
+      <div class="banner-item">
+        <i class="fas fa-award"></i> NAFDAC Certified Products
+      </div>
+      <div class="banner-sep"></div>
+      <div class="banner-item">
+        <i class="fas fa-seedling"></i> Over 2,000 Farms Supported
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="brand-row">
+            <img src="images/ABP.jpeg" alt="ABP Industries" />
+            <div>
+              <div class="brand-name">ABP Industries</div>
+              <div class="brand-sub">Cultivating Tomorrow</div>
+            </div>
+          </div>
+          <p class="brand-tagline">
+            Rooted in Nigerian soil — delivering sustainable agricultural
+            solutions, quality inputs, and expert guidance across Lagos and
+            beyond.
+          </p>
+          <a class="contact-item" href="mailto:info@abpindustries.com"
+            ><span class="ci-icon"><i class="fas fa-envelope"></i></span
+            >info@abpindustries.com</a
+          >
+          <a class="contact-item" href="tel:07039460584"
+            ><span class="ci-icon"><i class="fas fa-phone"></i></span
+            >07039460584</a
+          >
+          <a class="contact-item" href="tel:08123173007"
+            ><span class="ci-icon"><i class="fas fa-phone"></i></span
+            >08123173007</a
+          >
+        </div>
+        <div class="footer-col">
+          <h3 class="col-title">Company</h3>
+          <a href="about.html">About Us</a
+          ><a href="product.html">Our Products</a
+          ><a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="col-title">Resources</h3>
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#farmingGuidesModal"
+            >Farming Guides</a
+          ><a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#agriculturalResearchModal"
+            >Agricultural Research</a
+          ><a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#marketTrendsModal"
+            >Market Trends</a
+          >
+        </div>
+        <div class="footer-col">
+          <h3 class="col-title">Legal</h3>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal"
+            >Terms of Service</a
+          ><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"
+            >Privacy Policy</a
+          ><a href="#" data-bs-toggle="modal" data-bs-target="#cookiesModal"
+            >Cookies Policy</a
+          >
+        </div>
+      </div>
+      <div class="cert-strip">
+        <div class="cert-inner">
+          <div class="cert-badge">
+            <i class="fas fa-shield-alt"></i> Quality Assured
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-recycle"></i> Eco-Friendly
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-users"></i> Community-Driven
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-microscope"></i> Research-Backed
+          </div>
+          <div class="cert-divider"></div>
+          <div class="cert-badge">
+            <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p class="copyright">
+            &copy; 2025 <strong>ABP Industries Limited</strong> — All rights
+            reserved
+          </p>
+          <div class="location-tag">
+            <i class="fas fa-seedling"></i> Proudly growing Nigeria's
+            agricultural future
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a
+            ><a href="#"><i class="fab fa-facebook-f"></i></a
+            ><a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS (same as about.html) -->
+    <div
+      class="modal fade"
+      id="farmingGuidesModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Guide to Profitable Farming in Lagos</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              At <strong>ABP Industries</strong>, we are committed to
+              revolutionizing agriculture in Lagos.
+            </p>
+            <ul>
+              <li>
+                <strong>Urban Farming Techniques</strong>Hydroponics, rooftop,
+                and vertical farming.
+              </li>
+              <li>
+                <strong>Soil &amp; Climate Considerations</strong>Premium
+                fertilizers suited to Lagos soil.
+              </li>
+              <li>
+                <strong>Livestock Farming Support</strong>Poultry, fish, and
+                snail farming consulting.
+              </li>
+              <li>
+                <strong>Market Access &amp; Distribution</strong>Direct
+                connections to consumers.
+              </li>
+            </ul>
+            <p>
+              We provide
+              <strong>free farming guides and consultation services</strong> for
+              farmers looking to scale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="agriculturalResearchModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Innovations in Lagos Agriculture</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>ABP Industries</strong> leads agricultural innovation.
+            </p>
+            <ul>
+              <li>
+                <strong>High-Yield Seed Varieties</strong>Research-backed,
+                drought-resistant varieties.
+              </li>
+              <li>
+                <strong>Smart Farming Solutions</strong>IoT-based irrigation and
+                AI crop monitoring.
+              </li>
+              <li>
+                <strong>Sustainable Agriculture</strong>Organic fertilizers and
+                zero-waste methods.
+              </li>
+              <li>
+                <strong>Training &amp; Development</strong>Workshops and on-site
+                training.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="marketTrendsModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Market Report: Future of Farming in Lagos (2025)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>ABP Industries is at the centre of key market trends:</p>
+            <ul>
+              <li>
+                <strong>Rise of Agribusiness Startups</strong>Increased
+                small-scale agribusinesses.
+              </li>
+              <li>
+                <strong>Growing Demand for Organic Produce</strong
+                >Health-conscious consumers drive demand.
+              </li>
+              <li>
+                <strong>Digital Transformation</strong
+                ><strong>ABP AgroConnect</strong> links farmers with buyers.
+              </li>
+              <li>
+                <strong>Government Initiatives</strong>Securing grants and loans
+                for farmers.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Terms of Service — ABP Industries</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>By using our services, you agree to:</p>
+            <ul>
+              <li>
+                <strong>Service Usage</strong>Agricultural consulting, training,
+                and distribution.
+              </li>
+              <li>
+                <strong>Intellectual Property</strong>All content is
+                copyrighted.
+              </li>
+              <li>
+                <strong>Liability Limitation</strong>Not liable for unforeseen
+                losses.
+              </li>
+              <li>
+                <strong>Amendments</strong>Terms may be updated periodically.
+              </li>
+            </ul>
+            <p>Contact <strong>legal@abpindustries.com</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Privacy Policy — ABP Industries</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>At <strong>ABP Industries</strong>, we value your privacy.</p>
+            <ul>
+              <li>
+                <strong>Data Collection</strong>Only necessary information is
+                collected.
+              </li>
+              <li>
+                <strong>Data Security</strong>Industry-standard security
+                protocols applied.
+              </li>
+              <li>
+                <strong>Third Parties</strong>We do not sell personal
+                information.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cookiesModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cookies Policy — ABP Industries</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>ABP Industries uses cookies to provide a smooth experience.</p>
+            <ul>
+              <li>
+                <strong>Essential Cookies</strong>Required for basic operation.
+              </li>
+              <li>
+                <strong>Analytics Cookies</strong>Improve performance and
+                content.
+              </li>
+              <li>
+                <strong>Preference Cookies</strong>Remember your settings.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      AOS.init();
-    </script>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
+    <!-- Product quality band responsive fix -->
+    <style>
+      @media (max-width: 768px) {
+        .product-list section > .container,
+        section[style*="grid-template-columns:1fr 1fr"] {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    </style>
     <script src="script.js"></script>
-    <script type="module" src="three-rotate.js"></script>
   </body>
 </html>
