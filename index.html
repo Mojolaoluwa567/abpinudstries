@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intro- ABP Industries</title>
+    <title>Home - ABP Industries</title>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/ABP.jpeg" type="image/x-icon" />
@@ -17,20 +17,806 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Preloader -->
-    <div id="logo-animation">
-      <img src="images/ABP.jpeg" alt="Logo" id="loader" />
-      <div class="dots-loader">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Your full page content goes here -->
+
+    <!-- <div id="customCursor">
+        <img src="images/cursor.png" alt="Cursor" />
+      </div> -->
+
+    <!-- HEADER -->
+    <header id="mainHeader">
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="home.html"
+            ><img src="ABP-removebg.png" alt="ABP Industries"
+          /></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- MOBILE MENU — outside header so position:fixed works correctly -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="nav-close" id="navClose" aria-label="Close menu">
+        &times;
+      </button>
+      <ul class="mobile-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div id="pageWrapper">
+      <main>
+        <section class="hero">
+          <div id="scene" class="parent">
+            <!-- Background Image -->
+            <img
+              src="images/farmer-working-small-plant-growing-field-sunset.jpg"
+              alt="Farmer working on field during sunset"
+              loading="lazy"
+            />
+
+            <!-- Text Block 1 -->
+            <div class="text-block" data-depth="0.4">
+              <h1>
+                Nourishing the <br />
+                Nation <br />
+                One Harvest <br />
+                at a Time
+              </h1>
+              <p>
+                ABP Industries stands at the forefront of agriculture and food
+                production in Nigeria. We are dedicated to farming, processing,
+                and wholesale or retail distribution of essential food staples
+                in the country.
+              </p>
+            </div>
+
+            <!-- Text Block 2 -->
+            <div class="text-block2" data-depth="0.4">
+              <h1>
+                Cultivating <br />
+                the best <br />
+                Just For <br />
+                You
+              </h1>
+              <p>
+                At ABP Industries, we are committed to driving Nigeria's food
+                security through sustainable farming, advanced processing, and
+                efficient distribution of vital food staples across the nation.
+              </p>
+            </div>
+          </div>
+
+          <hr class="line" />
+          <div>
+            <p class="scroll">
+              <a href="#" class="hvr-underline-from-left">
+                Scroll for more
+                <span class="arrow">
+                  <lottie-player
+                    src="lottie/lottieflow-scroll-down-07-000000-easey.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 20px; height: 20px; color: white"
+                    loop
+                    autoplay
+                  ></lottie-player>
+                </span>
+              </a>
+            </p>
+            <p class="products">
+              <a href="product.html" class="hvr-underline-from-left">
+                Our Products <span class="arrow">&#8594;</span>
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section class="about">
+          <h1 data-aos="fade-up">About Us <br /></h1>
+          <p data-aos="fade-up">
+            At ABP Industries, we are committed to delivering premium,
+            hygienically processed agricultural products that meet the highest
+            standards of quality and freshness. With a focus on excellence, we
+            specialize in the production and supply of staple foods such as
+            garri, rice, beans, and vegetables, carefully sourced and refined to
+            preserve their natural value.
+
+            <br />
+            <br />
+            As a trusted name in the agricultural sector, we serve both
+            wholesale and bulk buyers, ensuring competitive pricing without
+            compromising on quality. Our operations prioritize sustainability,
+            leveraging eco-friendly practices to promote responsible farming and
+            protect the environment. Backed by years of experience and a passion
+            for innovation, ABP Industries continues to set the standard for
+            reliable, nutritious, and superior food products across Africa and
+            beyond.
+          </p>
+          <div class="tag" data-aos="fade-up">
+            <a href="about.html" class="button">
+              <span class="text">About Us</span>
+              <span class="iconn">&nearr;</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="why">
+          <h1>Why Choose Us</h1>
+          <div class="choose">
+            <div class="choose-item" data-aos="fade-up">
+              <div class="choose-text">
+                <h3 class="choose-header">
+                  Premium Quality products
+                  <span class="icon">&#43;</span>
+                </h3>
+                <p class="choose-content">
+                  At ABP Industries, we prioritize excellence. Our garri, rice,
+                  beans, and vegetables are carefully selected, finely
+                  processed, and handled with the highest industry standards to
+                  ensure top-notch quality in every grain.
+                </p>
+              </div>
+              <hr class="bottom" />
+            </div>
+
+            <div class="choose-item" data-aos="fade-up">
+              <div class="choose-text">
+                <h3 class="choose-header">
+                  Finely Processed & Hygienically Packaged
+                  <span class="icon">&#43;</span>
+                </h3>
+                <p class="choose-content">
+                  We use advanced agricultural processing techniques to refine
+                  and package our products, ensuring they retain their
+                  nutritional value, texture, and freshness while meeting
+                  international food safety standards.
+                </p>
+              </div>
+              <hr class="bottom" />
+            </div>
+
+            <div class="choose-item" data-aos="fade-up">
+              <div class="choose-text">
+                <h3 class="choose-header">
+                  Wholesale & Bulk Supply
+                  <span class="icon">&#43;</span>
+                </h3>
+                <p class="choose-content">
+                  Whether you are a retailer, distributor, or business owner, we
+                  offer large-scale, high-quality agricultural products at
+                  competitive prices, ensuring you get the best value for your
+                  investment.
+                </p>
+              </div>
+              <hr class="bottom" />
+            </div>
+
+            <div class="choose-item" data-aos="fade-up">
+              <div class="choose-text">
+                <h3 class="choose-header">
+                  Trusted & Well-Established Brand
+                  <span class="icon">&#43;</span>
+                </h3>
+                <p class="choose-content">
+                  ABP Industries has earned a strong reputation across Africa
+                  for delivering fresh, premium, and luxurious food products.
+                  Our customers trust us for reliability, consistency, and
+                  excellence in the agricultural sector.
+                </p>
+              </div>
+              <hr class="bottom" />
+            </div>
+
+            <div class="choose-item" data-aos="fade-up">
+              <div class="choose-text">
+                <h3 class="choose-header">
+                  Sustainable & Eco-Friendly Practices
+                  <span class="icon">&#43;</span>
+                </h3>
+                <p class="choose-content">
+                  We are committed to responsible farming and eco-friendly
+                  processing. By using sustainable agricultural methods, we
+                  ensure that our farming practices are not just profitable but
+                  also environmentally conscious.
+                </p>
+              </div>
+              <hr class="bottom" />
+            </div>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="backy">
+            <h1>Featured Products</h1>
+            <div class="animation">
+              <article class="featured">
+                <div class="box">
+                  <img src="images/product1&2.png" alt="Premium 50kg Bag" />
+                </div>
+                <div class="content">
+                  <h6>PREMIUM GARRI</h6>
+                  <h2>50kg & 25kg</h2>
+                  <p>
+                    Finely packaged in durable sacks, our 50kg and 25kg Garrison
+                    offer very large quantities ideal for bulk buyers, ensuring
+                    top-quality produce that meets your needs with excellence.
+                  </p>
+                  <button class="hvr-bounce-to-top">
+                    <a href="#">Order Now</a>
+                  </button>
+                </div>
+              </article>
+
+              <article class="featured2">
+                <div class="box2">
+                  <img src="images/product-3&4.png" alt="Premium 50kg Bag" />
+                </div>
+                <div class="content2">
+                  <h6>PREMIUM GARRI</h6>
+                  <h2>10kg & 5kg</h2>
+                  <p>
+                    Perfectly sized for convenience, our 10kg and 5kg Garrison
+                    sacks offer the same premium quality in manageable
+                    quantities, ideal for homes and small businesses.
+                  </p>
+                  <button class="hvr-bounce-to-top">
+                    <a href="#">Order Now</a>
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="more" id="viewMore">
+              <p>
+                <a
+                  href="product.html"
+                  id="viewMoreLink"
+                  class="no-page-transition"
+                  >View More</a
+                >
+
+                <lottie-player
+                  class="arroww"
+                  src="lottie/wired-outline-221-arrow-10-hover-streach.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 20px; height: 20px"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </p>
+            </div>
+          </div>
+          <div id="expandOverlay"></div>
+        </section>
+
+        <section class="abp-stats">
+          <div class="context" data-aos="fade-up">
+            <h2>We're not just another agricultural company.</h2>
+            <p class="intro">
+              At ABP Industries, we're committed to sustainable farming,
+              innovative processing, and ensuring food security across Nigeria.
+              We believe that in today's world, feeding the nation requires
+              excellence at every stage.
+            </p>
+            <p class="subtext">
+              That's why our operations focus on quality, efficiency, and
+              meeting the needs of communities nationwide. With ABP, you're not
+              just getting produce you're getting purpose.
+            </p>
+
+            <div class="stats">
+              <div>
+                <h3 class="counter" data-target="15">0</h3>
+                <p>Farms Nationwide</p>
+              </div>
+              <div>
+                <h3 class="counter" data-target="200">0</h3>
+                <p>Tons Processed Monthly</p>
+              </div>
+              <div>
+                <h3 class="counter" data-target="100">0</h3>
+                <p>Wholesale Partners</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="brand-row">
+            <img
+              src="images/ABP.jpeg"
+              alt="ABP Industries"
+              onerror="this.style.background = '#eaf2e7'"
+            />
+            <div>
+              <div class="brand-name">ABP Industries</div>
+              <div class="brand-sub">Cultivating Tomorrow</div>
+            </div>
+          </div>
+          <p class="brand-tagline">
+            Rooted in Nigerian soil — delivering sustainable agricultural
+            solutions, quality inputs, and expert guidance across Lagos and
+            beyond.
+          </p>
+          <a class="contact-item" href="mailto:info@abpindustries.com">
+            <span class="ci-icon"><i class="fas fa-envelope"></i></span
+            >info@abpindustries.com
+          </a>
+          <a class="contact-item" href="tel:07039460584">
+            <span class="ci-icon"><i class="fas fa-phone"></i></span>07039460584
+          </a>
+          <a class="contact-item" href="tel:08123173007">
+            <span class="ci-icon"><i class="fas fa-phone"></i></span>08123173007
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="col-title">Company</h3>
+          <a href="about.html">About Us</a>
+          <a href="product.html">Our Products</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="col-title">Resources</h3>
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#farmingGuidesModal"
+            >Farming Guides</a
+          >
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#agriculturalResearchModal"
+            >Agricultural Research</a
+          >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#marketTrendsModal"
+            >Market Trends</a
+          >
+        </div>
+
+        <div class="footer-col">
+          <h3 class="col-title">Legal</h3>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal"
+            >Terms of Service</a
+          >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"
+            >Privacy Policy</a
+          >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#cookiesModal"
+            >Cookies Policy</a
+          >
+        </div>
+      </div>
+
+      <!-- Cert strip -->
+      <div class="cert-strip">
+        <div class="cert-inner">
+          <div class="cert-badge">
+            <i class="fas fa-shield-alt"></i> Quality Assured
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-recycle"></i> Eco-Friendly Practices
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-users"></i> Community-Driven
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-microscope"></i> Research-Backed
+          </div>
+          <div class="cert-divider"></div>
+          <div class="cert-badge">
+            <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p class="copyright">
+            &copy; 2025 <strong>ABP Industries Limited</strong> — All rights
+            reserved
+          </p>
+          <div class="location-tag">
+            <i class="fas fa-seedling"></i> Proudly growing Nigeria's
+            agricultural future
+          </div>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div
+      class="modal fade"
+      id="farmingGuidesModal"
+      tabindex="-1"
+      aria-labelledby="farmingGuidesLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="farmingGuidesLabel">
+              Guide to Profitable Farming in Lagos
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              At <strong>ABP Industries</strong>, we are committed to
+              revolutionizing agriculture in Lagos by providing farmers with
+              best practices to maximize yield and profitability.
+            </p>
+            <ul>
+              <li>
+                <strong>Urban Farming Techniques</strong>Maximizing space with
+                hydroponics, rooftop, and vertical farming solutions designed
+                for Lagos.
+              </li>
+              <li>
+                <strong>Soil &amp; Climate Considerations</strong>Tailored crop
+                recommendations and access to premium fertilizers suited to
+                Lagos soil conditions.
+              </li>
+              <li>
+                <strong>Livestock Farming Support</strong>Expert consulting
+                across poultry, fish, and snail farming operations.
+              </li>
+              <li>
+                <strong>Market Access &amp; Distribution</strong>Direct
+                connections linking our farmers to end consumers efficiently.
+              </li>
+            </ul>
+            <p>
+              We provide
+              <strong>free farming guides and consultation services</strong> for
+              farmers looking to scale their operations.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Scripts -->
+    <div
+      class="modal fade"
+      id="agriculturalResearchModal"
+      tabindex="-1"
+      aria-labelledby="agriculturalResearchLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="agriculturalResearchLabel">
+              Innovations in Lagos Agriculture — ABP Industries Report
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>ABP Industries</strong> leads agricultural innovation,
+              ensuring Lagos farmers have access to cutting-edge technology and
+              proven methods.
+            </p>
+            <ul>
+              <li>
+                <strong>High-Yield Seed Varieties</strong>Research-backed,
+                drought-resistant crop varieties optimised for Nigerian growing
+                conditions.
+              </li>
+              <li>
+                <strong>Smart Farming Solutions</strong>IoT-based irrigation
+                systems, soil sensors, and AI-powered crop monitoring tools.
+              </li>
+              <li>
+                <strong>Sustainable Agriculture</strong>Organic fertilizers,
+                composting systems, and zero-waste farming methods.
+              </li>
+              <li>
+                <strong>Training &amp; Development</strong>On-site workshops and
+                hands-on training programmes for farming communities.
+              </li>
+            </ul>
+            <p>
+              We innovate, research, and develop solutions that push Lagos
+              agriculture forward for generations to come.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="marketTrendsModal"
+      tabindex="-1"
+      aria-labelledby="marketTrendsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="marketTrendsLabel">
+              ABP Industries Market Report: The Future of Farming in Lagos
+              (2025)
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              ABP Industries is at the centre of key agricultural market trends
+              reshaping Lagos:
+            </p>
+            <ul>
+              <li>
+                <strong>Rise of Agribusiness Startups</strong>Increasing numbers
+                of small-scale agribusinesses entering the market with fresh
+                ideas and solutions.
+              </li>
+              <li>
+                <strong>Growing Demand for Organic Produce</strong
+                >Health-conscious consumers are driving sustained demand for
+                organic and natural produce.
+              </li>
+              <li>
+                <strong>Digital Transformation</strong
+                ><strong>ABP AgroConnect</strong> directly links farmers with
+                buyers through our dedicated online platform.
+              </li>
+              <li>
+                <strong>Government Initiatives &amp; Funding</strong>We assist
+                clients in identifying and securing agricultural grants and
+                low-interest loans.
+              </li>
+            </ul>
+            <p>
+              Through market insights and expert strategies, ABP Industries is
+              actively shaping the future of agriculture in Lagos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="termsModal"
+      tabindex="-1"
+      aria-labelledby="termsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsLabel">
+              Terms of Service — ABP Industries
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By accessing and using our services, you agree to the following
+              terms and conditions:
+            </p>
+            <ul>
+              <li>
+                <strong>Service Usage</strong>Our platform provides agricultural
+                consulting, training, and product distribution services to
+                registered users and clients.
+              </li>
+              <li>
+                <strong>Intellectual Property</strong>All research reports,
+                guides, and market data published by ABP Industries are fully
+                copyrighted and may not be reproduced without written
+                permission.
+              </li>
+              <li>
+                <strong>Liability Limitation</strong>ABP Industries is committed
+                to quality service delivery but cannot be held liable for
+                unforeseen agricultural losses or market fluctuations beyond our
+                control.
+              </li>
+              <li>
+                <strong>Amendments</strong>We reserve the right to update these
+                terms periodically. Continued use of our services constitutes
+                acceptance of the revised terms.
+              </li>
+            </ul>
+            <p>
+              For legal enquiries, please contact
+              <strong>legal@abpindustries.com</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="privacyModal"
+      tabindex="-1"
+      aria-labelledby="privacyLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyLabel">
+              Privacy Policy — ABP Industries
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              At <strong>ABP Industries</strong>, we are committed to protecting
+              and respecting your privacy. This policy sets out how we collect,
+              use, store, and safeguard your personal information.
+            </p>
+            <ul>
+              <li>
+                <strong>Data Collection</strong>We collect only the information
+                necessary to deliver our services, including contact details,
+                farm data, and transaction records.
+              </li>
+              <li>
+                <strong>Data Usage</strong>Your information is used solely to
+                improve your experience, process orders, and communicate
+                relevant agricultural updates.
+              </li>
+              <li>
+                <strong>Data Security</strong>We implement industry-standard
+                security protocols to protect your data from unauthorised access
+                or disclosure.
+              </li>
+              <li>
+                <strong>Third Parties</strong>We do not sell or share your
+                personal information with third parties without your explicit
+                consent, except where required by law.
+              </li>
+            </ul>
+            <p>
+              For privacy-related enquiries, please contact
+              <strong>privacy@abpindustries.com</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="cookiesModal"
+      tabindex="-1"
+      aria-labelledby="cookiesLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cookiesLabel">
+              Cookies Policy — ABP Industries
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              ABP Industries uses cookies to provide a smooth, personalised, and
+              secure browsing experience on our platform.
+            </p>
+            <ul>
+              <li>
+                <strong>Essential Cookies</strong>Required for the basic
+                operation of our website, including session management and
+                security features.
+              </li>
+              <li>
+                <strong>Analytics Cookies</strong>Help us understand how
+                visitors use our site so we can improve performance and content
+                delivery.
+              </li>
+              <li>
+                <strong>Preference Cookies</strong>Remember your settings and
+                preferences to personalise your experience on return visits.
+              </li>
+              <li>
+                <strong>Managing Cookies</strong>You may disable cookies through
+                your browser settings at any time, though this may affect
+                certain site functionality.
+              </li>
+            </ul>
+            <p>
+              By continuing to use our website, you consent to our use of
+              cookies in accordance with this policy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- AOS CSS should be in <head> -->
+
+    <!-- 1️⃣ AOS Library FIRST -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- 2️⃣ GSAP CORE first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- 3️⃣ ScrollTrigger AFTER gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- 4️⃣ Other libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <script
@@ -39,9 +825,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js"></script>
+    <!-- 5️⃣ Then your custom inline JS -->
+
+    <!-- 6️⃣ Finally your THREE + Lenis script -->
+    <script type="module" src="script.js"></script>
   </body>
 </html>
